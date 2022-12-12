@@ -1,0 +1,11 @@
+node_modules/
+dist/
+production.env
+staging.env
+*.env
+local.env
+# assets/keys/*
+docker/
+.history
+package-lock.json
+node_modules
