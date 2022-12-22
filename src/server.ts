@@ -1,10 +1,9 @@
 // src/index.ts
-import express from 'express';
+import express, {Request,Response,Application} from 'express';
 import Shopify, { ApiVersion } from '@shopify/shopify-api';
 require('dotenv').config();
 
-const app = express();
-
+const app:Application = express();
 const { API_KEY, API_SECRET_KEY, SCOPES, SHOP, HOST, HOST_SCHEME } = process.env;
 
 Shopify.Context.initialize({
